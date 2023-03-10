@@ -2,11 +2,11 @@
 
 > content :
 > 
-> - [Switch toegang via het netwerk](#Switch-toegang-via-het-netwerk)
-> - [Switch toegang beveiligen](#Switch-toegang-beveiligen)
-> - [Fysieke poorten configureren](#Fysieke-poorten-configureren)
-> - [Switch configuratie verifiëren](#Switch-configuratie-verifiëren)
-> - [Switch poorten beveiligen](#Switch-poorten-beveiligen)
+> 1. [Switch toegang via het netwerk](#Switch-toegang-via-het-netwerk)
+> 2. [Switch toegang beveiligen](#Switch-toegang-beveiligen)
+> 3. [Fysieke poorten configureren](#Fysieke-poorten-configureren)
+> 4. [Switch configuratie verifiëren](#Switch-configuratie-verifiëren)
+> 5. [Switch poorten beveiligen](#Switch-poorten-beveiligen)
 
 ---
 
