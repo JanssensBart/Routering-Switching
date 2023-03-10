@@ -34,10 +34,7 @@
 | Commando                                                  | uitleg                                                                                |
 | -----------                                               | -----------                                                                           |
 | Switch(config)#interface *int-nr*                         | De interface selecteren die je gaat configureren                                      |
-| Switch(config-if)#mls qos trust cos                       | Dat er kwaliteitsgarantie gelden (qos = Quality of Service) en dat Class of Service (cos) 
-                                                              die de telefoon aangeeft van te moeten geven aan de end-user,
-                                                              door de switch moet vertrouwd worden en dat deze alles moet doen om daaraan te kunnen 
-                                                              tegemoet komen.                                                                       |
+| Switch(config-if)#mls qos trust cos                       | Dat er kwaliteitsgarantie gelden (qos = Quality of Service) en dat Class of Service (cos) die de telefoon aangeeft van te moeten geven aan de end-user,door de switch moet vertrouwd worden en dat deze alles moet doen om daaraan te kunnen tegemoet komen.|
 | Switch(config-if)#switchport voice vlan *nr*              | Instellen op welke VLAN het voice verkeer dat ontvangen wordt, moet terechtkomen      |
 
 
