@@ -3,13 +3,13 @@
 # 1. Commandos
 
 
-- **enable** : global config
-- **configure terminal** : interface config
-- **exit** of **ctrl z** : Om naar een eerder configuratieniveau te gaan
-- **copy running-config startup-config** : Configuratie bewaren RAM > NVRAM
-- **?** : hulp vragen
-- **do** : uitvoeren vanuit een *'verkeerd'* niveau.
-- **no** : Een commando ingegeven waarvan je het resultaat ongedaan wil maken
+```enable``` : global config
+```configure terminal``` : interface config
+```exit``` of ```ctrl z``` : Om naar een eerder configuratieniveau te gaan
+```copy running-config startup-config``` : Configuratie bewaren RAM > NVRAM
+```?``` : hulp vragen
+```do``` : uitvoeren vanuit een *'verkeerd'* niveau.
+```no``` : Een commando ingegeven waarvan je het resultaat ongedaan wil maken
 
 *hint : TAB voor autocompletion*
 
