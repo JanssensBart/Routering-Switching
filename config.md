@@ -18,14 +18,14 @@
 # 2. Afspraken
 
 In de labs mogen op de fysieke toestellen enkel de wachtwoorden
-**cisco** en **class** *(kleine letters)* gebruikt worden
+```**cisco**``` en ```**class**``` *(kleine letters)* gebruikt worden
 
 # 3.Toestellen her-initialiseren
 
 ### Stap 1
 
 ``` 
-Switch> **enable**
+Switch> enable
 Switch#
 ```
 ### Stap 2
@@ -43,7 +43,7 @@ Switch#
 NVRAM te wissen. U moet bevestigen dat u dat effectief wil doen.
 
 ``` 
-Switch# **erase startup-config**
+Switch# erase startup-config
 Erasing the nvram filesystem will remove all configuration files!
 Continue? [confirm][OK]Erase of nvram: complete
 Switch#
@@ -52,13 +52,13 @@ Switch#
 - Reload de switch. Druk Enter om verder te gaan.
 
 ``` 
-Switch# **reload**
+Switch# reload
 Proceed with reload? [confirm] *press enter*
 ```
 
 - Het kan zijn dat u onderstaande vraag krijgt. Antwoord dan met no en druk **Enter**.
 
 ``` 
-System configuration has been modified. Save? [yes/no]: **no**
+System configuration has been modified. Save? [yes/no]: no
 ```
 
