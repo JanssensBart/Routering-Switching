@@ -1,5 +1,9 @@
 ### Overvieuw Basic Switch Settings
 
+content :
+[Switch toegang via het netwerk](#Switch-toegang-via-het-netwerk)
+[Switch toegang beveiligen](#Switch-toegang-beveiligen)
+
 # Switch toegang <u>via het netwerk</u>
 
 ## 1. Switch Virtual Interface (= SVI)
@@ -68,5 +72,10 @@ Dit kan je checken met : ``` show version  ```
 
 
 :green_circle: [more info : *crypto key generate rsa*](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3650-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_0110.pdf#_OPENTOPIC_TOC_PROCESSING_d68e83)
+
+
+# Switch toegang beveiligen
+
+## 1. Console toegang beveiligen
 
 
