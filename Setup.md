@@ -1,4 +1,4 @@
-###  Cisco IOS introductie
+###  SETUP
 
 # 1. Verbinding maken met de apparatuur
 
@@ -31,7 +31,7 @@
 2. POST (Power On Self Test) ```diff + auto  ```
 3. Boot sequentie => ``` ######################  ```
 4. ``` “Press RETURN to get started!” ``` 
-5. ``` Would you like to enter the initial configuration dialog ? [yes/no] ```
+5. ``` Would you like to enter the initial configuration dialog ? [yes/no]  => NO ``` 
 > De optie **“yes”** start de wizard op.
 > De optie **“no”** laat toe om verder te gaan met de huidige ingestelde configuratie.
 
