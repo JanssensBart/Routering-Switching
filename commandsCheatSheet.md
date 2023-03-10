@@ -30,7 +30,7 @@
 | Switch(config)#ip default-gateway 192.168.1.254           | Default gateway instellen                                                             |
 | Switch(config)#exit                                       | Teruggaan naar privileged mode                                                        |
 | Switch#show vlan brief                                    | Een kort overzicht geven van welke poorten deel uitmaken van vlan 99.                 |
-| Switch#copy run start                                      | De configuratie bewaren                                                              |
+| Switch#copy run start                                     | De configuratie bewaren                                                               |
 
 ---
 
