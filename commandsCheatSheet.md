@@ -1,6 +1,8 @@
-### Basic Switch Settings
+### Overvieuw Basic Switch Settings
 
-# 1. Switch Virtual Interface (= SVI)
+# Switch toegang <u>via het netwerk</u>
+
+## 1. Switch Virtual Interface (= SVI)
 
 | Commando                                                  | uitleg                                                                                |
 | -----------                                               | -----------                                                                           |
@@ -18,9 +20,11 @@
 | Switch(config)#ip default-gateway 192.168.1.254           | Default gateway instellen                                                             |
 | Switch(config)#exit                                       | Teruggaan naar privileged mode                                                        |
 | Switch#show vlan brief                                    | Een kort overzicht geven van welke poorten deel uitmaken van vlan 99.                 |
-| Switch#copy run star                                      | De configuratie bewaren                                                               |
+| Switch#copy run start                                      | De configuratie bewaren                                                               |
 
-# 2. Console toegang beveiligen
+# Switch toegang <u>beveiligen</u>
+
+## 1. Console toegang beveiligen
 
 | Commando                                                  | uitleg                                                                                |
 | -----------                                               | -----------                                                                           |
@@ -31,7 +35,7 @@
 | Switch(config-line)#login                                 | Enablen van password checking bij benaderen via console                               |
 | Switch(config-line)#end                                   | Terugkeren naar privileged mode                                                       |
 
-# 3. In-band toegang verkrijgen via netwerk (telnet,SSH)
+## 2. Telnet toegang beveiligen
 
 | Commando                                                  | uitleg                                                                                |
 | -----------                                               | -----------                                                                           |
@@ -41,3 +45,28 @@
 | Switch(config-line)#password cisco                        | Als toegangswachtwoord ‘cisco’ instellen                                              |
 | Switch(config-line)#login                                 | Controleren of er nog telnet lijnen onbeveiligd zijn (i.e. of er nog telnet lijnen zonder wachtwoord zijn)|
 | Switch(config-line)#end                                   | Terugkeren naar privileged mode                                                       |
+
+## 3. SSH toegang instellen
+
+SSH enkel te gebruiken als IOS versie voldoende hoog is, als de IOS filenaam “k9” bevat, dan kan SSH
+Dit kan je checken met : ``` show version  ```
+![show version](./images/showVersion.png)
+
+
+| Commando                                                  | uitleg                                                                                |
+| -----------                                               | -----------                                                                           |
+| Switch>enable                                             | Overgaan naar privileged mode                                                         |
+| Switch#show ip ssh                                        | Nakijken of de switch ssh ondersteunt                                                 |
+| Switch#configure terminal                                 | Overgaan naar global configuration mode                                               |
+| Switch(config)#ip ssh version 2                           | Instellen dat switch ssh versie 2 moet gebruiken                                      |
+| Switch(config)#ip domain-name *[ap.test]* [^1]*meer info* | De naam van het netwerk / domein waarin de switch functioneert, instellen             |
+| Switch(config)#crypto key generate rsa                    | Encryptie sleutel genereren. Modulus lengte zelf op te geven (hoe langer de key, hoe veiliger. Bvb 1024 bits|
+| Switch(config)#username admin secret cisco                | User admin aanmaken die zich zal moeten aanmelden met wachtwoord 'cisco'              |
+| Switch(config-line)#line vty 0 15                         | Alle mogelijke ssh lijnen selecteren                                                  |
+| Switch(config-line)#transport input ssh                   | Instellen dat op alle lijnen enkel toegang via ssh mogelijk is                        |
+| Switch(config-line)#login local                           | Afdwingen dat users zich lokaal authenticeren als ze de switch benaderen via ssh      |
+
+
+[^1] : [more info : *crypto key generate rsa*]https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3650-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_0110.pdf#_OPENTOPIC_TOC_PROCESSING_d68e83
+
+
