@@ -43,9 +43,7 @@
 | Commando                                                  | uitleg                                                                                |
 | -----------                                               | -----------                                                                           |
 | Switch(config)#vtp mode *server* *client*                 | De switch instellen als VTP server of als VTP client.                                 |
-| Switch(config)#vtp domain *naam*                          | Alle switchen met dezelfde domein naam zullen VTP info met elkaar
-                                                              uitwisselen. Een VTP client isn hetzelfde domein als de VTP server
-                                                              neemt de VAN definities over van de server                                            |
+| Switch(config)#vtp domain *naam*                          | Alle switchen met dezelfde domein naam zullen VTP info met elkaar                                                              uitwisselen. Een VTP client isn hetzelfde domein als de VTP server neemt de VAN definities over van de server                                       |
 | Switch#show vtp status                                    | Status opvragen van het VTP domein                                                    |
 | Switch#show vtp counters                                  | VTP statistieken opvragen                                                             |
 
@@ -53,11 +51,6 @@
 
 | Probleem                      | Resultaat                                             |  uitleg                                                   | 
 | -----------                   | -----------                                           | -----------                                               |
-| Foute native VLAN ingesteld   | Beveiligingsrisico en raar gedrag van de communicatie |   De twee trunkpoorten aan weerszijden
-                                                                                            van een link hebben een ander native
-                                                                                            VLAN geconfigureerd gekregen                            |
-| Trunk mode fout               | Geen connectiviteit                                   |   De ene kant van de trunklijn is
-                                                                                            geconfigureerd als trunk poort, maar de
-                                                                                            andere kant als access poort                            |
-| Toegelaten VLANs op de trunk fout ingesteld| Onverwacht verkeer of geen verkeer over de trunk lijn | De lijst van toegelaten VLANs op een 
-                                                                                                        trunk lijn staat niet helemaal op punt      |
+| Foute native VLAN ingesteld   | Beveiligingsrisico en raar gedrag van de communicatie |   De twee trunkpoorten aan weerszijden van een link hebben een ander native VLAN geconfigureerd gekregen |
+| Trunk mode fout               | Geen connectiviteit                                   |   De ene kant van de trunklijn is geconfigureerd als trunk poort, maar de andere kant als access poort |
+| Toegelaten VLANs op de trunk fout ingesteld| Onverwacht verkeer of geen verkeer over de trunk lijn | De lijst van toegelaten VLANs op een trunk lijn staat niet helemaal op punt |
