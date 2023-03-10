@@ -10,13 +10,13 @@
 ## Putty Settings
 
 ```
-{
+
     Bits per second: 9600
     Data bits: 8
     Parity: none
     Stop bits: 1
     Flow Control: none
-}
+
 ```
 ![Putty settings](./images/puttySession.png)
 
@@ -28,10 +28,10 @@
 
 ## Opstart procedure
 1. Turn on Cisco device
-2. POST (Power On Self Test) ```diff + auto  ```
+2. POST (Power On Self Test) $${\color{green}happens automatic}$$
 3. Boot sequentie => ``` ######################  ```
 4. ``` “Press RETURN to get started!” ``` 
-5. ``` Would you like to enter the initial configuration dialog ? [yes/no]  => NO ``` 
+5. ``` Would you like to enter the initial configuration dialog ? [yes/no]  => $${\color{red}NO}$$ ``` 
 > De optie **“yes”** start de wizard op.
 > De optie **“no”** laat toe om verder te gaan met de huidige ingestelde configuratie.
 
