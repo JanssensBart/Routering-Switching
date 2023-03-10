@@ -1,8 +1,9 @@
 ### Overvieuw Basic Switch Settings
 
-content :
-[Switch toegang via het netwerk](#Switch-toegang-via-het-netwerk)
-[Switch toegang beveiligen](#Switch-toegang-beveiligen)
+> content :
+> 
+> - [Switch toegang via het netwerk](#Switch-toegang-via-het-netwerk)
+> - [Switch toegang beveiligen](#Switch-toegang-beveiligen)
 
 # Switch toegang <u>via het netwerk</u>
 
