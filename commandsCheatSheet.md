@@ -8,6 +8,8 @@
 > - [Switch configuratie verifiëren](#Switch-configuratie-verifiëren)
 > - [Switch poorten beveiligen](#Switch-poorten-beveiligen)
 
+---
+
 # Switch toegang <u>via het netwerk</u>
 
 ## 1. Switch Virtual Interface (= SVI)
@@ -79,6 +81,7 @@ Dit kan je checken met : ``` show version  ```
 
 :one: [more info : *crypto key generate rsa*](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3650-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_0110.pdf#_OPENTOPIC_TOC_PROCESSING_d68e83)
 
+---
 
 # Fysieke poorten configureren
 
@@ -105,6 +108,7 @@ Dit kan je checken met : ``` show version  ```
 
 ![Auto settings](./images/autoConfig.png)
 
+---
 
 # Switch configuratie verifiëren
 
@@ -122,6 +126,8 @@ Dit kan je checken met : ``` show version  ```
 
 - In de output: sprake van zowel de interface zelf als van het zogenaamde line protocol.
 - Voor beiden verschillende toestanden mogelijk.
+
+---
 
 # Switch poorten beveiligen
 
