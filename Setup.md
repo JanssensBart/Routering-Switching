@@ -28,7 +28,7 @@
 
 ## Opstart procedure
 1. Turn on Cisco device
-2. POST (Power On Self Test) $\color{green}{test}$
+2. POST (Power On Self Test) <span style="color:blue">some *blue* text</span>
 3. Boot sequentie => ``` ######################  ```
 4. ``` “Press RETURN to get started!” ``` 
 5. ``` Would you like to enter the initial configuration dialog ? [yes/no]  => $${\color{red}NO}$$ ``` 
