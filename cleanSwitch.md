@@ -18,7 +18,7 @@
 # 2. Afspraken
 
 In de labs mogen op de fysieke toestellen enkel de wachtwoorden
-```**cisco**``` en ```**class**``` *(kleine letters)* gebruikt worden
+```cisco``` en ```class``` *(kleine letters)* gebruikt worden
 
 # 3.Toestellen her-initialiseren
 
