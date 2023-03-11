@@ -39,7 +39,7 @@ Delete filename [vlan.dat]? [confirm] *press enter*
 Switch#
 ```
 
-- Gebruik het erase startup-config command om de startup configuration file van
+- Gebruik het ```erase startup-config``` command om de startup configuration file van
 NVRAM te wissen. U moet bevestigen dat u dat effectief wil doen.
 
 ``` 
