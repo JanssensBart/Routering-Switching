@@ -41,7 +41,7 @@ password [cisco]
 login
 end
 ```
-4. Configure and Verify SSH Access on S1
+4. Configure and Verify SSH Access on Switch
 
     1. CONFIGURE SSH access on switch.
         ```ini 
