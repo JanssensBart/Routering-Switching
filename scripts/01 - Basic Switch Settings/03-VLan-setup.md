@@ -41,8 +41,35 @@ password [cisco]
 login
 end
 ```
+4. Configure and Verify SSH Access on S1
 
-4. save configuration
+    1. CONFIGURE SSH access on switch.
+    ```ini 
+    conf t
+    ip domain-name [CCNA-Lab.com]
+    username [admin] privilege 15 secret [sshadmin]
+    line vty 0 15
+    transport input ssh
+    login local
+    exit
+    crypto key generate rsa modulus 1024
+    end
+    ```
+    > IN PACKET TRACER:
+    > crypto key generate rsa **general-keys** 1028
+
+    2. MODIFY SSH settings
+    *shows ssh settings*
+    ```ini 
+    show ip ssh
+    ```
+    *Modify the default SSH configuration*
+    ```ini 
+    conf t
+    ip ssh time-out [75]
+    ip ssh authentication-retries [2]
+    ```
+5. save configuration
 
 ```ini 
 enable
