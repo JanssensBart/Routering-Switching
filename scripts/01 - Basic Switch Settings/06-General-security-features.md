@@ -30,7 +30,7 @@
     no shutdown
     end
     ```
-    > xxxx.xxxx.xxxx = incoming device to switch <br>
+    > xxxx.xxxx.xxxx = mac address of the incoming device to switch <br>
     > delete mac address: <br>
     > *clear port security restricted-macs ethernet 5*
     2. verify
