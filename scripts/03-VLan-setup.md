@@ -40,3 +40,10 @@ password [cisco]
 login
 end
 ```
+
+4. save configuration
+
+```ini 
+enable
+copy run start
+```
