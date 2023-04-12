@@ -44,17 +44,17 @@ end
 4. Configure and Verify SSH Access on S1
 
     1. CONFIGURE SSH access on switch.
-    ```ini 
-    conf t
-    ip domain-name [CCNA-Lab.com]
-    username [admin] privilege 15 secret [sshadmin]
-    line vty 0 15
-    transport input ssh
-    login local
-    exit
-    crypto key generate rsa modulus 1024
-    end
-    ```
+        ```ini 
+        conf t
+        ip domain-name [CCNA-Lab.com]
+        username [admin] privilege 15 secret [sshadmin]
+        line vty 0 15
+        transport input ssh
+        login local
+        exit
+        crypto key generate rsa modulus 1024
+        end
+        ```
         > IN PACKET TRACER:
         > crypto key generate rsa **general-keys** 1028
 
