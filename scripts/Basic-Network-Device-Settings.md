@@ -3,8 +3,8 @@
 - Basic switch settings.
 
 no ip domain-lookup
-hostname $${\color{yellow}name}$$
+hostname *name*
 service password-encryption
-enable secret $${\color{yellow}class}$$
+enable *class*
 banner motd #
-$${\color{yellow}Unauthorized access is strictly prohibited.}$$ #
+*Unauthorized access is strictly prohibited* #
