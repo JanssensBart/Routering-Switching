@@ -2,13 +2,13 @@
 
 - Basic switch settings.
 
-```shell 
+```ini 
 no ip domain-lookup
-hostname *name*
+hostname [name]
 service password-encryption
-enable *class*
+enable [class]
 banner motd #
-*Unauthorized access is strictly prohibited* 
+[Unauthorized access is strictly prohibited] 
 #
 ```
 
