@@ -7,9 +7,17 @@ conf t
 no ip domain-lookup
 hostname [name]
 service password-encryption
-enable [class]
+enable secret [class]
 banner motd #
 [Unauthorized access is strictly prohibited] 
 #
+line con 0
+password [cisco]
+login
+logging synchronous
+line vty 0 15
+password [cisco]
+login
+exit
 ```
 
