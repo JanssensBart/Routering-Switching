@@ -1,8 +1,9 @@
 # Config Basic Network Device Settings
 
-- Basic switch settings.
+1. Basic switch settings.
 
 ```ini 
+conf t
 no ip domain-lookup
 hostname [name]
 service password-encryption

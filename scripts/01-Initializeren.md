@@ -1,17 +1,17 @@
 # Initializeren en reloaden van een switch
 - does vlan.dat exist ?
-```shell 
+```ini 
 enable
 show flash
 ```
 - Delete vlan.dat.
-```shell 
+```ini
 delete vlan.dat
 ```
 *Delete filename [vlan.dat]?* [confirm] **enter**
 
 - delete startup-config
-```shell 
+```ini 
 erase startup-config
 ```
 *Erasing the nvram filesystem will remove all configuration files! Continue?*
@@ -19,7 +19,7 @@ erase startup-config
 *Erase of nvram: complete*
 
 
-```shell 
+```ini 
 reload
 ```
 
