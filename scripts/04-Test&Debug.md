@@ -11,6 +11,6 @@ show interface vlan [99]
 ```
 3. end to end connectivity
 
-```shell 
+```ini 
 ping [vlan ip]
 ```
