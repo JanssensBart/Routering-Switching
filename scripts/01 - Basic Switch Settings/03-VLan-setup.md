@@ -5,6 +5,7 @@
 ```ini 
 conf t
 vlan [99]
+name [Management]
 exit
 interface vlan [99]
 ip address [192.168.13.1] [255.255.255.0]
