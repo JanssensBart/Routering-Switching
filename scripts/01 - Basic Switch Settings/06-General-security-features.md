@@ -28,6 +28,8 @@
     switchport mode access
     switchport port-security
     switchport port-security mac-address xxxx.xxxx.xxxx
+    switchport port-security mac-address sticky
+    switchport port-security maximum [x]
     no shutdown
     end
     ```
