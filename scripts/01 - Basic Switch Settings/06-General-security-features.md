@@ -25,6 +25,7 @@
     conf t
     interface [f0/5]
     shutdown
+    switchport mode access
     switchport port-security
     switchport port-security mac-address xxxx.xxxx.xxxx
     no shutdown
