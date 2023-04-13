@@ -27,7 +27,7 @@
     shutdown
     switchport mode access
     switchport port-security
-    switchport port-security mac-address xxxx.xxxx.xxxx
+    switchport port-security mac-address [xxxx.xxxx.xxxx]
     switchport port-security mac-address sticky
     switchport port-security maximum [x]
     no shutdown
@@ -36,7 +36,7 @@
     > xxxx.xxxx.xxxx = mac address of the incoming device to switch <br>
     > delete mac address: <br>
     > *clear port security restricted-macs ethernet 5*
-    2. verify
+    2. verify - show port security on specific port.
      ```ini 
     enable
     show port-security interface [f0/5]
