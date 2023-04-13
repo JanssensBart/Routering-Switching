@@ -2,7 +2,7 @@
 
 1. Basic switch settings.
 
-```ini 
+```ini
 conf t
 no ip domain-lookup
 hostname [name]
