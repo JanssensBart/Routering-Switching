@@ -1,0 +1,11 @@
+# Trunk poorten instellen en toewijzen
+
+```ini 
+enable
+conf t
+interface [int-nr]
+switchport mode trunk
+switchport trunk native vlan nr 
+switchport trunk allowed vlan ? 
+switchport trunk allowed vlan except 5
+```
