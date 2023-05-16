@@ -4,9 +4,9 @@
 ```ini
 enable
 conf t
-router ospf [proces-id] #int
+router ospf [proces-id] 
 router-id [ipv4 address bv 1.1.1.1]
-network [ip_addr] [wildcard_mask] area [nummer] # moet op alle routers die binnen eenzelfde area werken, hetzelfde zijn
+network [ip_addr] [wildcard_mask] area [nummer] 
 passive-interface [interface-id] 
 ```
 
